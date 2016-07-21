@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ElectronicsController {
 
-	@RequestMapping("/")
+	@RequestMapping(value={"/","/index"})
 	public String homePage()
 	{
 		return "index";
 	}
+	
 }
