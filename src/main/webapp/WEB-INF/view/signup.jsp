@@ -10,10 +10,10 @@
 				<div class="panel-body">
 					<form class="form-horizontal" role="form">
 						<div class="form-group">
-							<label for="inputName" class="col-sm-3 control-label">Name</label>
+							<label for="inputName" class="col-sm-3 control-label">UserName</label>
 							<div class="col-sm-9">
 								<input type="name" class="form-control" id="inputName"
-									placeholder="Enter your name" required="">
+									placeholder="Enter your username" required="">
 							</div>
 						</div>
 						<div class="form-group">
@@ -24,27 +24,27 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputEmail1" class="col-sm-3 control-label"></label>
+							<label for="inputEmail1" class="col-sm-3 control-label">address</label>
 							<div class="col-sm-9">
-								<input type="email" class="form-control" id="inputEmail1"
-									placeholder="Re-enter your Email" required="">
+								<input type="address" class="form-control" id="inputAddress"
+									placeholder="Enter your address" required="">
 							</div>
 						</div>
+						<div class="form-group">
+							<label for="inputMobile" class="col-sm-3 control-label">Mobile</label>
+							<div class="col-sm-9">
+								<input type="mobile" class="form-control" id="inputMobile"
+									placeholder="Enter your Mobile Number" required="">
+							</div></div>
+							
 						<div class="form-group">
 							<label for="inputPassword" class="col-sm-3 control-label">Password</label>
 							<div class="col-sm-9">
-								<input type="password" class="form-control" id="inputPassword"
+								<input type="password" class="form-control" id="inputpassword"
 									placeholder="Enter your Password" required="">
 							</div>
 						</div>
-						<div class="form-group">
-							<div class="col-sm-offset-3 col-sm-9">
-						<div class="radio">
-							<label><input type="radio" name="optradio">Female</label>
-							<label><input type="radio" name="optradio">Male</label>
-						</div>
-						</div>
-						</div>
+						
 						
 						<div class="form-group">
 							<div class="col-sm-offset-3 col-sm-9">

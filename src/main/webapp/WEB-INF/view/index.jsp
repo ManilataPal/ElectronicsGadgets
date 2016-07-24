@@ -12,7 +12,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="resources/images/pic1.jpg" alt="Chania" style="width:640px;height:500px">
+      <img class="img-responsive" src="resources/images/a.png" alt="Chania" style="width:640px;height:500px">
 	  <div class="carousel-caption">
 	  <h3><b>ELECTRONIC GADGETS</b></h3>  
         <p><i>MOBILES!MOBILES!MOBILES!</i></p> 
@@ -20,7 +20,7 @@
 	</div>
 
     <div class="item">
-      <img src="resources/images/pic4.jpg" alt="Chania" style="width:640px;height:500px">
+      <img class="img-responsive" src="resources/images/b.png" alt="Chania" style="width:640px;height:500px">
 	  <div class="carousel-caption">
 	  <h3><b>ELECTRONIC GADGETS</b></h3>  
         <p><i>GET ALL COMPUTERS </i></p> 
@@ -28,7 +28,7 @@
     </div>
 
     <div class="item">
-      <img src="resources/images/pic2.jpg" alt="Chania" style="width:640px;height:500px">
+      <img class="img-responsive" src="resources/images/c.png" alt="Chania" style="width:640px;height:500px">
 	  <div class="carousel-caption">
 	  <h3><b>ELECTRONIC GADGETS</b></h3>  
         <p><i>WIDE RANGE OF MOBILES HERE </i></p> 
@@ -36,7 +36,7 @@
     </div>
 
     <div class="item">
-      <img src="resources/images/pic5.jpg" alt="Chania" style="width:640px;height:500px">
+      <img class="img-responsive" src="resources/images/d.png" alt="Chania" style="width:640px;height:500px">
 	  <div class="carousel-caption">
 	  <h3><b>ELECTRONIC GADGETS</b></h3>  
         <p><i>GET THE MOST REQUIRED APPLIANCES</i></p> 
@@ -55,28 +55,72 @@
   </a>
 </div>
 
-<div id="header1">
-				<h4><b>Popular Items </b></h4>         
-			</div>
-			<div class="row">
- <div class="col-md-2 col-md-offset-0.5">
-   <img class="img-responsive" src="resources/images/dell_xps.jpg" />
- </div>
- <div class="col-md-2">
-   <img class="img-responsive" src="resources/images/hp_envy.jpg" />
- </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="panel panel-primary ">
+                <div class="panel-heading">Popular!Popular!Popular!</div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+  <div class="col-sm-5 col-md-2">
+    <div class="thumbnail">
+      <img src="resources/images/hp_envy.jpg" alt="hp_envy">
+      <div class="caption">
+        <h3>Hp Envy Notebook</h3>
+        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+      </div>
+    </div>
+  </div>
 
- <div class="col-md-2">
-   <img class="img-responsive" src="resources/images/induction.jpg" />
- </div>
- <div class="col-md-2">
-   <img class="img-responsive" src="resources/images/sam_gal_j3.jpg" />
- </div>
- <div class="col-md-2">
-   <img class="img-responsive" src="resources/images/sam_gal_j7.jpg" />
- </div>
- <div class="col-md-2">
-   <img class="img-responsive" src="resources/images/sam_gal_s6.jpg" />
- </div>
+  <div class="col-sm-5 col-md-2">
+    <div class="thumbnail">
+      <img src="resources/images/dell_xps.jpg" alt="hp_envy">
+      <div class="caption">
+        <h3>Dell XPS System</h3>
+        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-5 col-md-2">
+    <div class="thumbnail">
+      <img src="resources/images/sam_gal_j3.jpg" alt="hp_envy">
+      <div class="caption">
+        <h3>Samsung Galaxy J3</h3>
+        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5 col-md-2">
+    <div class="thumbnail">
+      <img src="resources/images/sam_gal_j3.jpg" alt="hp_envy">
+      <div class="caption">
+        <h3>Samsung Galaxy J3</h3>
+        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5 col-md-2">
+    <div class="thumbnail">
+      <img src="resources/images/sam_gal_j3.jpg" alt="hp_envy">
+      <div class="caption">
+        <h3>Samsung Galaxy J3</h3>
+        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-5 col-md-2">
+    <div class="thumbnail">
+      <img src="resources/images/sam_gal_j3.jpg" alt="hp_envy">
+      <div class="caption">
+        <h3>Samsung Galaxy J3</h3>
+        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+      </div>
+    </div>
+  </div>
 </div>
 <%@ include file="footer.jsp" %>
