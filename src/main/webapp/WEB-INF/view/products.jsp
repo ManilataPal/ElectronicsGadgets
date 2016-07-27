@@ -8,59 +8,67 @@
 
 				</div>
 				<div class="panel-body">
-					<form class="form-horizontal" role="form">
+					<form class="form-horizontal" method="POST" role="form"
+						action="products" commandName="add">
+
 						<div class="form-group">
-							<label for="inputName" class="col-sm-3 control-label">Product ID</label>
+							<label for="productName" class="col-sm-3 control-label">Product
+								Name</label>
 							<div class="col-sm-8">
-								<input type="name" class="form-control" id="inputName"
-									placeholder="Enter the product ID" required="">
+								<input type="text" class="form-control" name="productName"
+									placeholder="Enter The product name" required="required">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputEmail" class="col-sm-3 control-label">Product Name</label>
+							<label for="productGroup" class="col-sm-3 control-label">Product
+								Group</label>
 							<div class="col-sm-8">
-								<input type="email" class="form-control" id="inputEmail"
-									placeholder="Enter The product name" required="">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="inputEmail1" class="col-sm-3 control-label">Product Group</label>
-							<div class="col-sm-8">
-								<input type="address" class="form-control" id="inputAddress"
+								<input type="text" class="form-control" name="productGroup"
 									placeholder="Enter the product group" required="">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputMobile" class="col-sm-3 control-label">Product Description</label>
+							<label for="productDescription" class="col-sm-3 control-label">Product
+								Description</label>
 							<div class="col-sm-8">
-								<input type="mobile" class="form-control" id="inputMobile"
-									placeholder="Enter the product description" required="">
-							</div></div>
-							
+								<input type="text" class="form-control"
+									name="productDescription"
+									placeholder="Enter the product description" required="required">
+							</div>
+						</div>
+
 						<div class="form-group">
-							<label for="inputPassword" class="col-sm-3 control-label">Product Quantity</label>
+							<label for="productQuantity" class="col-sm-3 control-label">Product
+								Quantity</label>
 							<div class="col-sm-8">
-								<input type="password" class="form-control" id="inputpassword"
+								<input type="number" class="form-control" name="productQuantity"
 									placeholder="Enter quantity of product" required="">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputMobile" class="col-sm-3 control-label">Product Price</label>
+							<label for="price" class="col-sm-3 control-label">Product
+								Price</label>
 							<div class="col-sm-8">
-								<input type="mobile" class="form-control" id="inputMobile"
+								<input type="number" class="form-control" name="price"
 									placeholder="Enter the price of product" required="">
-							</div></div>
-						
-							<div class="form-group last">
+							</div>
+						</div>
+
+						<div class="form-group last">
 							<div class="col-sm-offset-3 col-sm-9">
 								<button type="submit" class="btn btn-success btn-sm">ADD</button>
-								
+
 							</div>
 						</div>
 					</form>
+
 				</div>
+
 			</div>
+
+			
+
 		</div>
 	</div>
 </div>
-<%@ include file="footer.jsp" %>
+<%@ include file="footer.jsp"%>

@@ -97,27 +97,27 @@
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/sam_gal_j3.jpg" alt="hp_envy">
+      <img src="resources/images/sam_gal_j7.jpg" alt="hp_envy">
       <div class="caption">
-        <h3>Samsung Galaxy J3</h3>
+        <h3>Samsung Galaxy J7</h3>
         <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/sam_gal_j3.jpg" alt="hp_envy">
+      <img src="resources/images/sam_gal_s6.jpg" alt="hp_envy">
       <div class="caption">
-        <h3>Samsung Galaxy J3</h3>
+        <h3>Samsung Galaxy S6</h3>
         <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/sam_gal_j3.jpg" alt="hp_envy">
+      <img src="resources/images/induction.jpg" alt="hp_envy">
       <div class="caption">
-        <h3>Samsung Galaxy J3</h3>
+        <h3>Prestige Induction Stove</h3>
         <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
       </div>
     </div>

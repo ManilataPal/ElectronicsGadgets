@@ -1,3 +1,5 @@
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -48,11 +50,7 @@
 											</li>
 											<li class="divider">
 											</li>								
-											<li>
-												<a href="motorolamobile">Motorola</a>
-											</li>	
-											<li class="divider">
-											</li>
+											
 											<li>
 												<a href="micromaxmobile">Micromax</a>
 											</li>
@@ -105,6 +103,7 @@
 										
 								</li>
 							<li><a href="products">AddItem</a></li>
+							<li><a href="allProducts">All Products</a></li>
 								</ul>
 									
 								

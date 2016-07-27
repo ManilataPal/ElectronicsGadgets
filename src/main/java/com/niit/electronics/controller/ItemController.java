@@ -16,11 +16,7 @@ public class ItemController {
 	{
 		return "htcmobile";
 	}
-	@RequestMapping(value="/motorolamobile")
-	public String MotorolaPage()
-	{
-		return "motorolamobile";
-	}
+	
 	@RequestMapping(value="/micromaxmobile")
 	public String MicromaxPage()
 	{
@@ -71,5 +67,11 @@ public class ItemController {
 	{
 		return "contactus";
 	}
+	/*
+	@RequestMapping(value="/allProducts")
+	public String AllProductsPage(){
+		return "allProducts";
+	} */
 	
 }
+
