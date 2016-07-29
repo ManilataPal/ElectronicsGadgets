@@ -10,8 +10,10 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.niit.electronics.model.Product;
 import com.niit.electronics.service.ProductService;
@@ -21,6 +23,7 @@ public class ProductController {
 
 	@Autowired
 	private ProductService productService;
+	private Model model;
 
 	@RequestMapping(value = "/products", method = RequestMethod.GET)
 	public String additemPage(ModelMap map) {
@@ -34,14 +37,12 @@ public class ProductController {
 		productService.addProduct(product);
 		return "redirect:/products";
 	}
-    
-    @RequestMapping(params = "edit", method = RequestMethod.POST)
-    public String editProduct(HttpServletRequest request) {
-        return "redirect:/products";
-    }
-    @RequestMapping(params = "delete", method = RequestMethod.POST)
-    public String deleteProduct(HttpServletRequest request) {
-        return "redirect:/products";
+   
+   
+    @RequestMapping("/delete/{productId}")
+    public String deleteProduct(@PathVariable("productId") int productId) {
+    	this.productService.deleteProduct(productId);
+        return "redirect:/allProducts";
     }
     
     
@@ -52,9 +53,20 @@ public class ProductController {
     	map.addAttribute("product", list);
     	return "allProducts";
     }
-   @RequestMapping(value="/editproduct",method=RequestMethod.POST)
-   public String editProduct()
+   
+   
+   @RequestMapping(value="/editProduct", method=RequestMethod.GET)
+	public String editProductById(@RequestParam("productId") int productId, Model model){
+		Product p = productService.getProduct(productId);
+		model.addAttribute("getP", p);
+		return "editProduct";
+	}
+  
+   @RequestMapping(value="/editproduct/{productId}",method=RequestMethod.POST)
+   public String editProduct(@PathVariable("productId") int productId, Model model, @ModelAttribute("edit") Product product)
    {
-	   return "editproduct";
+	  productService.editProduct(product);
+	  
+	   return "redirect:/allProducts";
    }
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Entity;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -20,20 +21,21 @@ public class ProductDAOImpl implements ProductDAO {
 		
 	}
 	
-	public void editProduct(Product product) {
-		sessionFactory.getCurrentSession().createQuery("EDIT FROM Product WHERE pid="+product.getProductId()).executeUpdate();
-		
-	}
-	
 	public void deleteProduct(int pid) {
-		sessionFactory.getCurrentSession().createQuery("DELETE FROM Product WHERE pid="+pid);
+		Session session = this.sessionFactory.getCurrentSession();
+		Product p = (Product) session.load(Product.class, pid);
+		if(null != p){
+			session.delete(p);
+		}
+		
 		
 		
 	}
 
 	public Product getProduct(int pid) {
-		
+		System.out.println("Inside getProduct"+pid);
 		return (Product) sessionFactory.getCurrentSession().get(Product.class, pid);
+		
 	}
 
 	
@@ -41,6 +43,11 @@ public class ProductDAOImpl implements ProductDAO {
 		
 		return(List<Product>)
 		sessionFactory.getCurrentSession().createCriteria(Product.class).list();
+	}
+
+	public void editProduct(Product product) {
+		Session session = this.sessionFactory.getCurrentSession();
+		session.update(product);				
 	}
 
 }
