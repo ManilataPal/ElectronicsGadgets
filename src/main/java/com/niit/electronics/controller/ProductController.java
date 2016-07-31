@@ -23,8 +23,7 @@ public class ProductController {
 
 	@Autowired
 	private ProductService productService;
-	private Model model;
-
+	
 	@RequestMapping(value = "/products", method = RequestMethod.GET)
 	public String additemPage(ModelMap map) {
 		List<Product> list=productService.getAllProduct();

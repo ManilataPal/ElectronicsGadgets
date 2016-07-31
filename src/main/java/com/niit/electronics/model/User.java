@@ -14,17 +14,18 @@ public class User implements Serializable {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
+	private String username;
+	private String email;
+	private String password;
+	private int mobile;
+	private String address;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	private String username;
-	private String email;
-	private String password;
-	private int mobile;
-	private String address;
+	
 	
 	public String getUsername() {
 		return username;

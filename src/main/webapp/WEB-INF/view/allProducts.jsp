@@ -38,21 +38,22 @@ $(document).ready(function()
 				<div class="col-md-8 col-sm-offset-2">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<strong class="">List of All Products </strong></br>
+							<strong class=""><b>List of All Products</b> </strong></br>
 							
-							<form role="search" class="navbar-form navbar-left">
+							<form role="search" class="navbar-form navbar-center">
                 <div class="form-group">
                 <input type="text" id="search" placeholder="Search" class="form-control">
+                 </div>
 					<button class="btn btn-primary">Search</button>
                 
                     
-                </div>
+               
             </form>
 
 						</div>
-
+						<div class="table-responsive">
 						<c:if test="${!empty product}">
-							<table class="table-responsive" border="1" id="tab1">
+							<table class="table" border="1" id="tab1">
 								<thead>
 									<tr>
 										<th>Product ID</th>
@@ -81,7 +82,7 @@ $(document).ready(function()
 									</tbody>
 							</table>
 						</c:if>
-						
+						</div>
 					</div>
 				</div>
 			</div>

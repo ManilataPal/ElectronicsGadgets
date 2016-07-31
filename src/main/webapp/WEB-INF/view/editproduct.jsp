@@ -4,7 +4,7 @@
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<strong class="">Adding Products</strong>
+					<strong class="">Edit Products</strong>
 
 				</div>
 				<div class="panel-body">
