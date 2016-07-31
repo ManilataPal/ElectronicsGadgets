@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.electronics.model.Rolls;
 import com.niit.electronics.model.User;
+import com.niit.electronics.service.RollsService;
 import com.niit.electronics.service.UserService;
 
 @Controller
@@ -20,6 +22,9 @@ public class LoginController {
 	
 	@Autowired
 	private UserService userService;
+	
+	@Autowired
+	private RollsService rollsService;
 	
 	/*@RequestMapping(value="/login", method=RequestMethod.POST)
 	public ModelAndView loginUser(@ModelAttribute UserDetails userDetails){
@@ -38,7 +43,13 @@ public class LoginController {
 	    
 	  @RequestMapping(value = "/addUser", method = RequestMethod.POST)
 	  public String addEmployee(@ModelAttribute("adduser")User user, ModelMap model) {
-	    userService.addUser(user);
+		  Rolls rolls=new Rolls();
+		  userService.addUser(user);
+		  rolls.setUserId(user.getId());
+		  rolls.setRolls("ROLE_USER");
+		  rollsService.addRolls(rolls);
+		  
+	   
 	     return "login";
 	   }
 	}

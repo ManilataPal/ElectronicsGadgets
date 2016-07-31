@@ -9,7 +9,7 @@
 				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" method="POST" role="form"
-						action="products" commandName="add">
+						action="products" commandName="add" enctype="multipart/form-data">
 
 						<div class="form-group">
 							<label for="productName" class="col-sm-3 control-label">Product
@@ -54,6 +54,13 @@
 							</div>
 						</div>
 
+						<div class="form-group">
+							<label for="productImage" class="col-sm-3 control-label">Product
+								Image</label>
+							<div class="col-sm-8">
+								<input type="file" class="form-control" name="productImage">
+							</div>
+						</div>
 						<div class="form-group last">
 							<div class="col-sm-offset-3 col-sm-9">
 								<button type="submit" class="btn btn-success btn-sm">ADD</button>
@@ -61,15 +68,20 @@
 							</div>
 						</div>
 					</form>
-
 				</div>
-				
-
 			</div>
 
-			
+
+
 
 		</div>
+
+
 	</div>
+
+
+
+</div>
+</div>
 </div>
 <%@ include file="footer.jsp"%>

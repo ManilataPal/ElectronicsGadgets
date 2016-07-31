@@ -1,5 +1,8 @@
 package com.niit.electronics.controller;
 
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -14,6 +17,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import com.niit.electronics.model.Product;
 import com.niit.electronics.service.ProductService;
@@ -21,6 +26,7 @@ import com.niit.electronics.service.ProductService;
 @Controller
 public class ProductController {
 
+	Path path;
 	@Autowired
 	private ProductService productService;
 	
@@ -32,8 +38,21 @@ public class ProductController {
 	}
     @ModelAttribute("add")
 	@RequestMapping(value = "/products", method = RequestMethod.POST)
-	public String addProduct(@ModelAttribute("add") Product product, ModelMap model,BindingResult result) {
-		productService.addProduct(product);
+	public String addProduct(@ModelAttribute("add") Product product, ModelMap model,BindingResult result,HttpServletRequest request) {
+    	productService.addProduct(product);
+    	MultipartFile image = product.getProductImage();
+         String rootDirectory = request.getSession().getServletContext().getRealPath("/");
+         path = Paths.get(rootDirectory + "/resources/images/" + product.getProductId() + ".png");
+     System.out.println(path);
+         if(image != null && !image.isEmpty()){
+             try {
+                 image.transferTo(new File(path.toString()));
+             } catch (Exception ex){
+                 ex.printStackTrace();
+                 throw new RuntimeException("Product image saving failed", ex);
+             }
+         }
+    	
 		return "redirect:/products";
 	}
    
@@ -57,6 +76,7 @@ public class ProductController {
    @RequestMapping(value="/editProduct", method=RequestMethod.GET)
 	public String editProductById(@RequestParam("productId") int productId, Model model){
 		Product p = productService.getProduct(productId);
+		
 		model.addAttribute("getP", p);
 		return "editProduct";
 	}
@@ -68,4 +88,11 @@ public class ProductController {
 	  
 	   return "redirect:/allProducts";
    }
+   
+   @RequestMapping(value = "/", method = RequestMethod.GET)
+   public String showUploadForm(HttpServletRequest request) {
+       return "products";
+   }
+    
+   
 }
