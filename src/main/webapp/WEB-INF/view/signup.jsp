@@ -94,7 +94,7 @@
 					</form:form>
 				</div>
 				<div class="panel-footer">
-					Registered? <a href="index" class="">Login Here</a>
+					Registered? <a href="login" class="">Login Here</a>
 				</div>
 			</div>
 		</div>

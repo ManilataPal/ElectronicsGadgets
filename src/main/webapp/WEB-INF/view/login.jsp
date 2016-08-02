@@ -8,11 +8,11 @@
 
 				</div>
 				<div class="panel-body">
-					<form class="form-horizontal" role="form">
+					<form:form action="submit" class="form-horizontal" role="form" commandName="user">
 						<div class="form-group">
-							<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+							<label for="inputEmail3" class="col-sm-3 control-label">UserName</label>
 							<div class="col-sm-9">
-								<input type="email" class="form-control" id="inputEmail3"
+								<input type="text" class="form-control" id="inputEmail3"
 									placeholder="Email" required="">
 							</div>
 						</div>
@@ -39,10 +39,10 @@
 								<button type="reset" class="btn btn-default btn-sm">Reset</button>
 							</div>
 						</div>
-					</form>
+					</form:form>
 				</div>
 				<div class="panel-footer">
-					Not Registered? <a href="#" class="">Register here</a>
+					Not Registered? <a href="signup" class="">Register here</a>
 				</div>
 			</div>
 		</div>

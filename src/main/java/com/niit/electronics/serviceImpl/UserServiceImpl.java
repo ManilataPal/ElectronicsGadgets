@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.niit.electronics.dao.RollsDAO;
 import com.niit.electronics.dao.UserDAO;
 import com.niit.electronics.model.User;
 import com.niit.electronics.service.UserService;
@@ -18,10 +19,16 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	private UserDAO userDAO;
 	
+	@Autowired
+	private RollsDAO rollsDAO;
+	
+	
 	public void addUser(User user) {
 	
 		userDAO.addUser(user);
 	}
+	
+	
 	
 
 }

@@ -105,6 +105,7 @@
 								</li>
 							<li><a href="products">AddItem</a></li>
 							<li><a href="allProducts">All Products</a></li>
+							<li><a href="category">Categories</a></li>
 								</ul>
 									
 								

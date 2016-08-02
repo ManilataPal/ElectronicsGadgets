@@ -2,6 +2,8 @@ package com.niit.electronics.controller;
 
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,15 +28,6 @@ public class LoginController {
 	@Autowired
 	private RollsService rollsService;
 	
-	/*@RequestMapping(value="/login", method=RequestMethod.POST)
-	public ModelAndView loginUser(@ModelAttribute UserDetails userDetails){
-	userDAO.saveOrUpdate(userDetails);
-	ModelAndView mv = new ModelAndView("/index");
-	mv.addObject("successMessage", "You are successfully logged in");
-	return mv;
-	 
-	}*/
-	
 	
 	 @RequestMapping(value = "/signup", method = RequestMethod.GET)
 	  public String employee(@ModelAttribute("adduser")User user) {
@@ -52,5 +45,58 @@ public class LoginController {
 	   
 	     return "login";
 	   }
-	}
+	  
+	  
+	  /*@RequestMapping(value="/login", method=RequestMethod.GET)
+		  public String login(Model model, String error, String logout){
+		  	if(error != null)
+		  		model.addAttribute("error", "Your username and password is invalid");
+		    if(logout != null)
+		    	model.addAttribute("message", "You have been logged out successfully");
+		    	return "login";
+	  }
+		@RequestMapping(value = {"/", "/welcome"}, method=RequestMethod.GET)
+	public String welcome(Model model){
+		return "index";
+	}*/
+	  
+	 @RequestMapping(value = "/login", method = RequestMethod.GET )
+	  public String login(Model model) {
+		 // model.addAttribute("msg","Please Enter Your Login details ");
+		  return "login";
+	  }
+	  
+	  @RequestMapping(value = "/submit", method = RequestMethod.POST)
+	  public String submit(Model model, @ModelAttribute("user") User user){
+		  if(user != null && user.getUsername() != null & user.getPassword() != null ){
+			  if(user.getUsername().equals("admin") && user.getPassword().equals("admin")){
+				  model.addAttribute("msg","Welcome" +user.getUsername());
+				  return "index";
+				  
+			  }
+			  else{
+				  model.addAttribute("error","Invalid Details");
+				  return "login";
+				   }
+			  }
+		return "login";
+		  }
+	  
+	 /* @RequestMapping(value = "/login", method=RequestMethod.GET)
+		  public String login(){
+		  return "redirect:login";
+	  }
+	  
+	  @RequestMapping(value="/userCheck", method)
+	  public String userCheck(ModelMap model, HttpServletRequest request){
+		  String name=request.getParameter("username");
+		  String name=request.getParameter("password");
+		  if()
+	  }*/
+	  
+	  
+	  }
 
+
+
+	

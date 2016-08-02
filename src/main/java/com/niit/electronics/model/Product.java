@@ -19,6 +19,7 @@ public class Product implements Serializable {
 	private String productName;
 	private String productGroup;
 	private String productDescription;
+	private double price;
 	@Transient
 	private MultipartFile productImage;
 	public MultipartFile getProductImage() {
@@ -65,7 +66,7 @@ public class Product implements Serializable {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	private double price;
+	
 	
 	
 	
