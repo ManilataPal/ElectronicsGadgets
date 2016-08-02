@@ -19,11 +19,12 @@ public class CategoryServiceImpl implements CategoryService {
 	
 	@Autowired
 	private CategoryDAO categoryDAO;
+	
 	public void addCategory(Category category) {
 		categoryDAO.addCategory(category);
 		
 	}
-
+	
 	public void editCategory(Category category) {
 		categoryDAO.editCategory(category);
 		

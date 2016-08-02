@@ -9,7 +9,7 @@
 				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" method="POST" role="form"
-						action="products" commandName="add" enctype="multipart/form-data">
+						action="category" commandName="add">
 
 						<div class="form-group">
 							<label for="categoryName" class="col-sm-3 control-label">Name</label>
@@ -105,7 +105,7 @@ $(document).ready(function()
 
 						</div>
 						<div class="table-responsive">
-						<c:if test="${!empty category}"> //attention needed
+						<c:if test="${!empty allCategory}"> 
 							<table class="table" border="1" id="tab1">
 								<thead>
 									<tr>
@@ -118,13 +118,13 @@ $(document).ready(function()
 									</tr>
 								</thead>
 								<tbody>
-									<c:forEach items="${category}" var="cat">
+									<c:forEach items="${allCategory}" var="cat">
 										<tr>
-											<td><c:out value="${cat.CategoryId}" /></td>
+											<td><c:out value="${cat.categoryId}" /></td>
 											<td><c:out value="${cat.categoryName}" /></td>
 											<td><c:out value="${cat.categoryDescription}" /></td>
-											<td><a href="<c:url value='/editProduct?categoryId=${cat.categoryId}' />" >Edit</a></td>
-											<td><a href='<c:url value="/delete/${cat.categoryId}" />' >Delete</a></td>
+											<td><a href="<c:url value='/editCategory?categoryId=${cat.categoryId}' />" >Edit</a></td>
+											<td><a href='<c:url value="/deleteCat/${cat.categoryId}" />' >Delete</a></td>
 										</tr>
 									</c:forEach>
 									</tbody>

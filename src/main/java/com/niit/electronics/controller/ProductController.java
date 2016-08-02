@@ -88,11 +88,7 @@ public class ProductController {
 	  
 	   return "redirect:/allProducts";
    }
-   
-   @RequestMapping(value = "/", method = RequestMethod.GET)
-   public String showUploadForm(HttpServletRequest request) {
-       return "products";
-   }
+  
     
    
 }

@@ -15,6 +15,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 	
 	@Autowired
 	private SessionFactory sessionFactory;
+	
 	public void addCategory(Category category) {
 		
 		sessionFactory.getCurrentSession().save(category);

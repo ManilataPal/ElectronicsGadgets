@@ -9,7 +9,7 @@
 				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" method="POST" role="form"
-						action="editproduct/${getC.categoryId}" commandName="edit">
+						action="editCategory/${getC.categoryId}" commandName="edit">
 
 						<div class="form-group">
 							<label for="categoryId" class="col-sm-3 control-label">Category

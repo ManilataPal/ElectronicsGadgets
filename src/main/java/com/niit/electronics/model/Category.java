@@ -12,7 +12,7 @@ import javassist.SerialVersionUID;
 @Entity
 public class Category implements Serializable {
 	
-	
+	private static final long serialVersionUID = 2066082466319553409L;
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int categoryId;
