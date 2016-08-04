@@ -111,8 +111,14 @@
 								
 								
             <ul class="nav navbar-nav navbar-right">
-<li><a href="login">Login</a></li>
-<li><a href="signup">SignUp</a></li>
+<li><a href="${pageContext.request.contextPath}/login">Login</a></li>
+<li><a href="${pageContext.request.contextPath}/signup">SignUp</a></li>
+<li><c:if test="${pageContext.request.userPrincipal.name != null}">
+  
+     | &nbsp;
+     <a href="${pageContext.request.contextPath}/logout">Logout</a>
+     
+  </c:if></li>
 </ul>
 				</div> 
 				

@@ -4,6 +4,7 @@ D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\da
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\dao\ProductDAO.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\dao\UserDAO.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\controller\ProductController.java
+D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\model\Supplier.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\controller\LoginController.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\serviceImpl\RollsServiceImpl.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\daoImpl\ProductDAOImpl.java
@@ -14,12 +15,17 @@ D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\se
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\daoImpl\RollsDAOImpl.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\service\CategoryService.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\model\Product.java
+D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\dao\SupplierDAO.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\model\User.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\serviceImpl\CategoryServiceImpl.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\model\Rolls.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\daoImpl\CategoryDAOImpl.java
+D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\daoImpl\SupplierDAOImpl.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\serviceImpl\ProductServiceImpl.java
+D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\serviceImpl\SupplieServiceImpl.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\model\Category.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\service\ProductService.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\controller\ElectronicsController.java
+D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\service\SupplierService.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\daoImpl\UserDAOImpl.java
+D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\controller\SupplierController.java

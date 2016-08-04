@@ -47,7 +47,7 @@ public class LoginController {
 	   }
 	  
 	  
-	  /*@RequestMapping(value="/login", method=RequestMethod.GET)
+	/* @RequestMapping(value="/login", method=RequestMethod.GET)
 		  public String login(Model model, String error, String logout){
 		  	if(error != null)
 		  		model.addAttribute("error", "Your username and password is invalid");
@@ -60,7 +60,7 @@ public class LoginController {
 		return "index";
 	}*/
 	  
-	 @RequestMapping(value = "/login", method = RequestMethod.GET )
+	/*@RequestMapping(value = "/login", method = RequestMethod.GET )
 	  public String login(Model model) {
 		 // model.addAttribute("msg","Please Enter Your Login details ");
 		  return "login";
@@ -71,7 +71,7 @@ public class LoginController {
 		  if(user != null && user.getUsername() != null & user.getPassword() != null ){
 			  if(user.getUsername().equals("admin") && user.getPassword().equals("admin")){
 				  model.addAttribute("msg","Welcome" +user.getUsername());
-				  return "index";
+				  return "redirect:/successLogin";
 				  
 			  }
 			  else{
@@ -79,20 +79,26 @@ public class LoginController {
 				  return "login";
 				   }
 			  }
-		return "login";
-		  }
+		return "redirect:/login";
+		  }*/
+	  @RequestMapping(value = "/login", method = RequestMethod.GET)
+	    public String ogin(Map<String, Object> model) {
+	        User user = new User();
+	        model.put("userForm", user);
+	        return "login";
+	    }
+	  @RequestMapping(value = "/submit", method = RequestMethod.POST)
+	    public String doLogin(@Valid @ModelAttribute("userForm") User userForm,
+	            BindingResult result, Map<String, Object> model) {
+	 
+	        if (result.hasErrors()) {
+	            return "login";
+	        }
+	 
+	        return "successLogin";
+	    }
 	  
-	 /* @RequestMapping(value = "/login", method=RequestMethod.GET)
-		  public String login(){
-		  return "redirect:login";
-	  }
 	  
-	  @RequestMapping(value="/userCheck", method)
-	  public String userCheck(ModelMap model, HttpServletRequest request){
-		  String name=request.getParameter("username");
-		  String name=request.getParameter("password");
-		  if()
-	  }*/
 	  
 	  
 	  }

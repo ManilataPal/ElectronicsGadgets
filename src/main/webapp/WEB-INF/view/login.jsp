@@ -8,7 +8,7 @@
 
 				</div>
 				<div class="panel-body">
-					<form:form action="submit" class="form-horizontal" role="form" commandName="user">
+					<form:form action="submit" class="form-horizontal" role="form" commandName="userForm">
 						<div class="form-group">
 							<label for="inputEmail3" class="col-sm-3 control-label">UserName</label>
 							<div class="col-sm-9">
@@ -42,7 +42,7 @@
 					</form:form>
 				</div>
 				<div class="panel-footer">
-					Not Registered? <a href="signup" class="">Register here</a>
+					Not Registered? <a href="${pageContext.request.contextPath}/signup" class="">Register here</a>
 				</div>
 			</div>
 		</div>
