@@ -8,39 +8,68 @@
 
 				</div>
 				<div class="panel-body">
-					<form:form action="signup" class="form-horizontal" role="form" method="POST"  commandName="adduser">
+					<%-- <form:form action="addUser" method="POST" commandName="adduser">
+						<table>
+							<tbody>
+								
+								<tr>
+									<td><form:label path="username">UserName:</form:label></td>
+									<td><form:input path="username"></form:input></td>
+								</tr>
+								<tr>
+									<td><form:label path="password">Password:</form:label></td>
+									<td><form:input path="password"></form:input></td>
+								</tr>
+								<tr>
+									<td><form:label path="email"> Email:</form:label></td>
+									<td><form:input path="email"></form:input></td>
+								</tr>
+								<tr>
+									<td><form:label path="address">Address:</form:label></td>
+									<td><form:input path="address"></form:input></td>
+								<tr>
+									<td><form:label path="mobile">Mobile:</form:label></td>
+									<td><form:input path="mobile"></form:input></td>
+								<tr>
+									<td colspan="2"><input type="submit"
+										value="Submit"/></td>
+								</tr>
+							</tbody>
+						</table>
+					</form:form> --%>
+					<form:form action="addUser" class="form-horizontal" role="form" method="POST"  commandName="adduser">
 						<div class="form-group">
-							<label for="inputName" class="col-sm-3 control-label">UserName</label>
+							<label for="username" class="col-sm-3 control-label">UserName</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="username"
+								<input type="text" class="form-control" name="username" id="username"
 									placeholder="Enter your username" required="required">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputEmail" class="col-sm-3 control-label">Email</label>
+							<label for="email" class="col-sm-3 control-label">Email</label>
 							<div class="col-sm-9">
-								<input type="email" class="form-control" name="email"
+								<input type="email" class="form-control" name="email" id="email"
 									placeholder="Enter your Email" required="required">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputAddress" class="col-sm-3 control-label">Address</label>
+							<label for="address" class="col-sm-3 control-label">Address</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="address"
+								<input type="text" class="form-control" name="address" id="address"
 									placeholder="Enter your address" required="required">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="inputMobile" class="col-sm-3 control-label">Mobile</label>
+							<label for="mobile" class="col-sm-3 control-label">Mobile</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="mobile"
+								<input type="text" class="form-control" name="mobile" id="mobile"
 									placeholder="Enter your Mobile Number" required="required">
 							</div></div>
 							
 						<div class="form-group">
-							<label for="inputPassword" class="col-sm-3 control-label">Password</label>
+							<label for="password" class="col-sm-3 control-label">Password</label>
 							<div class="col-sm-9">
-								<input type="password" class="form-control" name="password"
+								<input type="password" class="form-control" name="password" id="password"
 									placeholder="Enter your Password" required="required">
 							</div>
 						</div>
@@ -65,10 +94,10 @@
 					</form:form>
 				</div>
 				<div class="panel-footer">
-					 Registered? <a href="index" class="">Login Here</a>
+					Registered? <a href="${pageContext.request.contextPath}/login" class="">Login Here</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<%@ include file="footer.jsp" %>
+<%@ include file="footer.jsp"%>

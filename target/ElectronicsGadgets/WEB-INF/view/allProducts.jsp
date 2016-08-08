@@ -64,6 +64,7 @@ $(document).ready(function()
 										<th>Product Price</th>
 										<th>Edit Product</th>
 										<th>Delete Product</th>
+										<th>Product Image</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -75,6 +76,7 @@ $(document).ready(function()
 											<td><c:out value="${prod.productDescription}" /></td>
 											<td><c:out value="${prod.productQuantity}" /></td>
 											<td><c:out value="${prod.price}" /></td>
+											<td><img src="<c:url value='/resources/images/${prod.productId}.png' />" height="50" width="50" /></td>
 											<td><a href="<c:url value='/editProduct?productId=${prod.productId}' />" >Edit</a></td>
 											<td><a href='<c:url value="/delete/${prod.productId}" />' >Delete</a></td>
 										</tr>

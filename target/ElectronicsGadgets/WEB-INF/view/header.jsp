@@ -1,5 +1,6 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -104,13 +105,20 @@
 								</li>
 							<li><a href="products">AddItem</a></li>
 							<li><a href="allProducts">All Products</a></li>
+							<li><a href="category">Categories</a></li>
 								</ul>
 									
 								
 								
             <ul class="nav navbar-nav navbar-right">
-<li><a href="login">Login</a></li>
-<li><a href="signup">SignUp</a></li>
+<li><a href="${pageContext.request.contextPath}/login">Login</a></li>
+<li><a href="${pageContext.request.contextPath}/signup">SignUp</a></li>
+<li><c:if test="${pageContext.request.userPrincipal.name != null}">
+  
+     | &nbsp;
+     <a href="${pageContext.request.contextPath}/logout">Logout</a>
+     
+  </c:if></li>
 </ul>
 				</div> 
 				

@@ -15,18 +15,27 @@ public class User implements Serializable {
 
 	
 	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
+	//@NotNull
+	//@Size(min=6, max=20)
 	private String username;
-	@NotNull
-	@Email
 	private String email;
+	private boolean isActive;
 	
-	@NotNull(message="Please enter your password")
-	@Size(min=6, max=15, message="Your password must be between 6 and 15")	
+	public boolean isActive() {
+		return isActive =true;
+	}
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
+	//@NotNull(message="Please enter your password")
+	//@Size(min=6, max=15, message="Your password must be between 6 and 15")	
 	private String password;
-	private int mobile;
+	
+	private long mobile;
 	private String address;
 	public int getId() {
 		return id;
@@ -54,10 +63,10 @@ public class User implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public int getMobile() {
+	public long getMobile() {
 		return mobile;
 	}
-	public void setMobile(int mobile) {
+	public void setMobile(long mobile) {
 		this.mobile = mobile;
 	}
 	public String getAddress() {
