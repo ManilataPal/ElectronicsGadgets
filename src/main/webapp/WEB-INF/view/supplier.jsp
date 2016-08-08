@@ -11,13 +11,7 @@
 					<form class="form-horizontal" method="POST" role="form"
 						action="supplier" commandName="add">
 
- 						<div class="form-group">
-							<label for="supplierId" class="col-sm-3 control-label">Supplier Id</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="supplierId"
-									placeholder="Enter The supplier Id" required="required">
-							</div>
-						</div>
+ 					   
  						<div class="form-group">
 							<label for="supplierName" class="col-sm-3 control-label">Supplier Name</label>
 							<div class="col-sm-8">
@@ -125,11 +119,11 @@ $(document).ready(function()
 
 						</div>
 						<div class="table-responsive">
-						<c:if test="${!empty allCategory}"> 
+						<c:if test="${!empty allSupplier}"> 
 							<table class="table" border="1" id="tab1">
 								<thead>
 									<tr>
-										<th>Supplier ID</th>
+										<th>Supplier Id</th>
 										<th>Supplier Name</th>
 										<th>Supplier Email</th>
 										<th>Supplier Address</th>
