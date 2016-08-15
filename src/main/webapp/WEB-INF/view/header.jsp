@@ -105,10 +105,12 @@
 
 
 								</ul></li>
+							
+							
 							<li><a href="${pageContext.request.contextPath}/allProducts">All
 									Products</a></li>
-							<c:if test="${pageContext.request.userPrincipal.name == 'admin'}" >
-								<li><a href="${pageContext.request.contextPath}/products">AddItem</a></li>
+									<c:if test="${pageContext.request.userPrincipal.name == 'admin'}" >
+								<li><a href="${pageContext.request.contextPath}/products">Add Products</a></li>
 
 								<li><a href="${pageContext.request.contextPath}/category">Categories</a></li>
 								<li><a href="${pageContext.request.contextPath}/supplier">Suppliers</a></li></c:if>

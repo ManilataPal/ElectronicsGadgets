@@ -2,6 +2,7 @@ D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\se
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\controller\ItemController.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\dao\RollsDAO.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\dao\ProductDAO.java
+D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\handler\ShoppingCartHandler.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\dao\UserDAO.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\controller\ProductController.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\model\Supplier.java
@@ -25,6 +26,7 @@ D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\se
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\serviceImpl\SupplieServiceImpl.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\model\Category.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\service\ProductService.java
+D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\model\Login.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\controller\ElectronicsController.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\service\SupplierService.java
 D:\software\MyWorkspace\ElectronicsGadgets\src\main\java\com\niit\electronics\daoImpl\UserDAOImpl.java

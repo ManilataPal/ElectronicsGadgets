@@ -44,7 +44,8 @@ public class SupplierDAOImpl implements SupplierDAO {
 	public List<Supplier> getAllSupplier() {
 		return (List<Supplier>) sessionFactory.getCurrentSession().createCriteria(Supplier.class).list();
 	}
-
+	
+	
 	
 	
 

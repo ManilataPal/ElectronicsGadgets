@@ -26,6 +26,7 @@ public class CategoryController {
 	@Autowired
 	private CategoryService categoryService;
 	
+	//adding category to categories
 	@RequestMapping(value = "/category", method=RequestMethod.GET)
 	public String addCategoryPage(ModelMap map){
 		map.addAttribute("allCategory", categoryService.getAllCategory());
@@ -40,6 +41,7 @@ public class CategoryController {
 		
 	}
 	
+	//delete category in list of categories
 	@RequestMapping("/deleteCat/{categoryId}")
 	public String deleteCategory( @PathVariable("categoryId") int categoryId) {
 		this.categoryService.deleteCategory(categoryId);
@@ -47,6 +49,7 @@ public class CategoryController {
 		
 	}
 	
+	//display of list of categories in list of categories
 	@RequestMapping(value="/category")
 	public String getAllCategory(ModelMap map){
 		List<Category> list=categoryService.getAllCategory();
@@ -54,6 +57,7 @@ public class CategoryController {
 		return "category";
 	}
 	
+	//editing categories in list of categories
 	@RequestMapping(value="/editCategory",method=RequestMethod.GET)
 	public String editCategoryById(@RequestParam("categoryId") int categoryId, Model model){
 		Category c = categoryService.getCategory(categoryId);
@@ -61,6 +65,7 @@ public class CategoryController {
 		model.addAttribute("getC", c);
 	    return "editCategory";	
 	}
+	
 	@RequestMapping(value="/editCategory/{categoryId}",method=RequestMethod.POST)
 	public String editCategory(@PathVariable("categoryId") int categoryID, Model model, @ModelAttribute("edit") Category category){
 		categoryService.editCategory(category);

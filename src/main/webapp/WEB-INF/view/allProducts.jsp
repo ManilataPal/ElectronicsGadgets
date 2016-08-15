@@ -51,7 +51,7 @@ $(document).ready(function()
             </form>
 
 						</div>
-						<div class="table-responsive">
+						<div class="table-responsive" data-max="30" data-min="11">
 						<c:if test="${!empty product}">
 							<table class="table" border="1" id="tab1">
 								<thead>
@@ -62,9 +62,9 @@ $(document).ready(function()
 										<th>Product Description</th>
 										<th>Product Quantity</th>
 										<th>Product Price</th>
-										<th>Edit Product</th>
-										<th>Delete Product</th>
-										<th>Product Image</th>
+										<th>Image</th>
+										<th>Product Operations</th>
+										
 									</tr>
 								</thead>
 								<tbody>
@@ -77,8 +77,12 @@ $(document).ready(function()
 											<td><c:out value="${prod.productQuantity}" /></td>
 											<td><c:out value="${prod.price}" /></td>
 											<td><img src="<c:url value='/resources/images/${prod.productId}.png' />" height="50" width="50" /></td>
-											<td><a href="<c:url value='/editProduct?productId=${prod.productId}' />" >Edit</a></td>
-											<td><a href='<c:url value="/delete/${prod.productId}" />' >Delete</a></td>
+											<td><a href="<c:url value='/viewDetails?productId=${prod.productId}' />" >View</a>
+											<c:if test="${pageContext.request.userPrincipal.name=='admin'}">
+											<a href="<c:url value='/editProduct?productId=${prod.productId}' />" >Edit</a>
+											<a href='<c:url value="/delete/${prod.productId}" />' >Delete</a>
+											</c:if>
+											</td>
 										</tr>
 									</c:forEach>
 									</tbody>

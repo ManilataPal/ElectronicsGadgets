@@ -30,6 +30,7 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
+	//adding product and image uploading using multipart
 	@RequestMapping(value = "/products", method = RequestMethod.GET)
 	public String additemPage(ModelMap map) {
 		List<Product> list=productService.getAllProduct();
@@ -56,14 +57,14 @@ public class ProductController {
 		return "redirect:/products";
 	}
    
-   
+    //deleting product from adding products page
     @RequestMapping("/delete/{productId}")
     public String deleteProduct(@PathVariable("productId") int productId) {
     	this.productService.deleteProduct(productId);
         return "redirect:/allProducts";
     }
     
-    
+    //listing all products 
    @RequestMapping(value="/allProducts")
     public String getAllProducts(ModelMap map)
     {
@@ -72,7 +73,7 @@ public class ProductController {
     	return "allProducts";
     }
    
-   
+   //editing products
    @RequestMapping(value="/editProduct", method=RequestMethod.GET)
 	public String editProductById(@RequestParam("productId") int productId, Model model){
 		Product p = productService.getProduct(productId);

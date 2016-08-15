@@ -24,6 +24,7 @@ public class SupplierController {
 	@Autowired
 	private SupplierService supplierService;
 
+	//adding supplier
 	@RequestMapping(value = "/supplier", method=RequestMethod.GET)
 	public String addSupplierPage(ModelMap map){
 		map.addAttribute("allSupplier", supplierService.getAllSupplier());
@@ -37,6 +38,7 @@ public class SupplierController {
 		return "redirect:/supplier";
 	}
 	
+	//deleting supplier from the list of suppliers
 	@RequestMapping("/deleteSup/{supplierId}")
 	public String deleteSupplier(@PathVariable("supplierId")int supplierId){
 		this.supplierService.deleteSupplier(supplierId);
@@ -44,6 +46,7 @@ public class SupplierController {
 		
 	}
 	
+	//displaying the list of suppliers
 	@RequestMapping(value="/supplier")
 	public String getAllSupplier(ModelMap map){
 		List<Supplier> list=supplierService.getAllSupplier();
@@ -51,6 +54,8 @@ public class SupplierController {
 		return "supplier";
 		
 	}
+	
+	//editing the list of suppliers
 	@RequestMapping(value="/editSupplier",method=RequestMethod.GET)
 	public String  edeitSupplierByID(@RequestParam("supplierId") int supplierId, Model model){
 		Supplier s = supplierService.getSupplier(supplierId);

@@ -1,11 +1,15 @@
 package com.niit.electronics.controller;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.niit.electronics.model.Product;
 
 @Controller
 public class ItemController {
 
+	//showing all the dropdwon items in header
 	@RequestMapping(value="/samsungmobile")
 	public String SamsungPage()
 	{
@@ -52,6 +56,8 @@ public class ItemController {
 	{
 		return "fans";
 	}
+	
+	//displaying all the links in footer panel
 	@RequestMapping(value="/aboutus")
 	public String AboutusPage()
 	{
@@ -67,11 +73,20 @@ public class ItemController {
 	{
 		return "contactus";
 	}
-	/*
-	@RequestMapping(value="/allProducts")
-	public String AllProductsPage(){
-		return "allProducts";
-	} */
+	/*//web flow
+	public Product initFlow() 
+	{
+		return new Product();
+		
+		
+	}*/
+	@RequestMapping(value="/ShoppingCart")
+	public String Order()
+	{
+		return "redirect:/memberShip";
+	}
+	
 	
 }
+
 

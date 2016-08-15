@@ -31,7 +31,7 @@ public class LoginController {
 	@Autowired
 	private RollsService rollsService;
 	
-	
+	//signup in header on index page
 	 @RequestMapping(value = "/signup", method = RequestMethod.GET)
 	  public String employee(@ModelAttribute("adduser")User user) {
 	    return "signup";
@@ -51,7 +51,7 @@ public class LoginController {
 	   }
 	  
 	  
-
+	  //login in header on index page
 	  @RequestMapping(value = "/login")
 	    public ModelAndView login(@RequestParam(value="error",required=false)String error,@RequestParam(value="logout",required=false)String logout,Model model) {
 	        if (error != null){
