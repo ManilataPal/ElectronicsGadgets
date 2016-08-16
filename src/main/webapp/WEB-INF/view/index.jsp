@@ -69,7 +69,7 @@
 
   <!-- detail -->
  <div class="table-responsive" data-max="30" data-min="11">
- <div class="col-sm-4">
+ <div class="col-md-3">
  					<div class="thumbnail">
 						<c:if test="${!empty product}">
 							<table class="table" border="1" id="tab1">
@@ -85,12 +85,12 @@
 									<c:forEach items="${product}" var="prod">
 										<tr>
 										
-											<td><img src="<c:url value='/resources/images/${prod.productId}.png' />" height="200px" width="200px" /><br>
+											<td><img src="<c:url value='/resources/images/${prod.productId}.png' />" height="150px" width="170px" /><br>
 											<c:out value="${prod.productName}" /><br>
 										
 											<c:out value="${prod.price}" /><br>
 											
-											<a href="<c:url value='/viewDetails?productId=${prod.productId}' />" >View</a>
+											<a href="<c:url value='/viewDetails?productId=${prod.productId}' />" ><b>VIEW</b></a>
 											
 											</td>
 										</tr>
