@@ -14,52 +14,52 @@
 <div class="row">
    <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/iron_bajaj-dx-7-l-w-dx-7-light-weight-200x200-imaekranumbsfyjj.jpeg" alt="hp_envy">
+      <img src="resources/images/iron_bajaj-dx-7-l-w-dx-7-light-weight-200x200-imaekranumbsfyjj.jpeg" alt="hp_envy" style="width:170px;height:195px">
       <div class="caption">
         <h3>Bajaj Iron DX</h3>
-        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
+        <p><a href="allProducts?item=Bajaj Iron DX" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/iron_bajaj-majesty-mx5-200x200-imaegthffcypn7vq.jpeg" alt="hp_envy">
+      <img src="resources/images/iron_bajaj-majesty-mx5-200x200-imaegthffcypn7vq.jpeg" alt="hp_envy" style="width:170px;height:170px">
       <div class="caption">
         <h3>Bajaj Iron Majesty</h3>
-        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
+        <p><a href="allProducts?item=Bajaj Iron Majesty" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/iron_maharaja-whiteline-easio-easio-di-104-200x200-imae888xbvuxsswe.jpeg" alt="hp_envy">
+      <img src="resources/images/iron_maharaja-whiteline-easio-easio-di-104-200x200-imae888xbvuxsswe.jpeg" alt="hp_envy" style="width:170px;height:170px">
       <div class="caption">
         <h3>Maharaja Iron Piece </h3>
-        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
+        <p><a href="allProducts?item=Maharaja Iron Piece" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/iron_morphy-richards-inspira-inspira-200x200-imaek9j4xzarpzze.jpeg" alt="hp_envy">
+      <img src="resources/images/iron_morphy-richards-inspira-inspira-200x200-imaek9j4xzarpzze.jpeg" alt="hp_envy" style="width:170px;height:145px">
       <div class="caption">
         <h3>Morphy Richards Iron Box </h3>
-        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
+        <p><a href="allProducts?item=Morphy Richards Iron Box" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/iron_philips-gc1010-gc1010-200x200-imadztnuydfpsqyw.jpeg" alt="hp_envy">
+      <img src="resources/images/iron_philips-gc1010-gc1010-200x200-imadztnuydfpsqyw.jpeg" alt="hp_envy" style="width:170px;height:170px">
       <div class="caption">
         <h3>Philips Iron GC1010 </h3>
-        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
+        <p><a href="allProducts?item=Philips Iron GC1010" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/iron_philips-gc2040-200x200-imaearphmgwkb3zy.jpeg" alt="hp_envy">
+      <img src="resources/images/iron_philips-gc2040-200x200-imaearphmgwkb3zy.jpeg" alt="hp_envy" style="width:170px;height:170px">
       <div class="caption">
         <h3>Philips Iron GC2040</h3>
         <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>

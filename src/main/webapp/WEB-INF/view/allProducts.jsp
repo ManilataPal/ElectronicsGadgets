@@ -1,6 +1,9 @@
 <%@ include file="header.jsp" %>
 <script>
-
+$(window).load(function()
+		{
+	searchTable($('#search').val());
+		})
 
 $(document).ready(function()
 		{
@@ -40,9 +43,9 @@ $(document).ready(function()
 						<div class="panel-heading">
 							<strong class=""><b>List of All Products</b> </strong></br>
 							
-							<form role="search" class="navbar-form navbar-center">
+							<form role="search"  class="navbar-form navbar-center">
                 <div class="form-group">
-                <input type="text" id="search" placeholder="Search" class="form-control">
+                <input type="text" id="search" value="${param.item}" placeholder="Search" class="form-control">
                  </div>
 					<button class="btn btn-primary">Search</button>
                 

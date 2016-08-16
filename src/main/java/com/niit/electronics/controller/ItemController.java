@@ -1,10 +1,15 @@
 package com.niit.electronics.controller;
 
 import org.omg.CORBA.PUBLIC_MEMBER;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.niit.electronics.model.Product;
+import com.niit.electronics.service.ProductService;
 
 @Controller
 public class ItemController {
@@ -85,8 +90,16 @@ public class ItemController {
 	{
 		return "redirect:/memberShip";
 	}
-	
-	
+	/*@Autowired
+	private ProductService productService;
+	@RequestMapping(value="/viewDetails", method=RequestMethod.GET)
+	public String ProductByName(@RequestParam("productName") int productName, Model model){
+		Product p = productService.getProduct(productName);
+		
+		model.addAttribute("getP", p);
+		return "viewDetails";
+	}
+	*/
 }
 
 
