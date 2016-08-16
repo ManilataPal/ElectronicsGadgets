@@ -17,7 +17,7 @@
       <img src="resources/images/wave_ifb-17pmmec1-200x200-imae4g4uzzjsumhk.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Vediocon Microwave Oven</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
       <img src="resources/images/wave_ifb-23bc4-200x200-imaef2pzg8fszesf.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Intex Oven</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>

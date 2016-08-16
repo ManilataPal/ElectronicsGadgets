@@ -99,7 +99,7 @@
 									<li class="divider"></li>
 									<li><a href="${pageContext.request.contextPath}/microwave">Microwave
 											Oven</a></li>
-									<li class="${pageContext.request.contextPath}/divider"></li>
+									<li class="divider"></li>
 									<li><a href="${pageContext.request.contextPath}/fans">Fans</a>
 									</li>
 

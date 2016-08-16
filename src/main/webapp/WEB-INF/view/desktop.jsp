@@ -17,7 +17,7 @@
       <img src="resources/images/hp_desk4.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>HP Room Decor Desktop</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
       <img src="resources/images/hp_desk3.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>HP Student Desktop</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
       <img src="resources/images/hp_desk2.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>HP Portable Desktop</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
       <img src="resources/images/hp_desk1.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>HP Desktop</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>

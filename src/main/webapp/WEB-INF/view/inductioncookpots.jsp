@@ -17,7 +17,7 @@
       <img src="resources/images/prestige-mini-pic-1-0-mini-200x200-imae3fupyh7zfsve.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Prestige Mini Induction</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
       <img src="resources/images/prestige-pic16-0-200x200-imae3bxvxfggvzrm.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Prestige Full Size Induction Stove</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>

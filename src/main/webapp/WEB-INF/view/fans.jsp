@@ -17,7 +17,7 @@
       <img src="resources/images/f_inalsa_exotica.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Room Decor Exotica Fan</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
       <img src="resources/images/f_maharaja_whiteline1.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Maharaja Whiteline Fan</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
       <img src="resources/images/f_maharaja_whiteline2.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Maharaja Home Decor </h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>

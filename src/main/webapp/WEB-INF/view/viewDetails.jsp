@@ -19,13 +19,13 @@
 								<tbody>
 									
 										<tr>
-											<td><c:out value="${product.productId}" /></td>
-											<td><c:out value="${product.productName}" /></td>
-											<td><c:out value="${product.productGroup}" /></td>
-											<td><c:out value="${product.productDescription}" /></td>
-											<td><c:out value="${product.productQuantity}" /></td>
-											<td><c:out value="${product.price}" /></td>
-											<td><img src="<c:url value='/resources/images/${product.productId}.png' />" height="50" width="50" /></td>
+											<td><c:out value="${getP.productId}" /></td>
+											<td><c:out value="${getP.productName}" /></td>
+											<td><c:out value="${getP.productGroup}" /></td>
+											<td><c:out value="${getP.productDescription}" /></td>
+											<td><c:out value="${getP.productQuantity}" /></td>
+											<td><c:out value="${getP.price}" /></td>
+											<td><img src="<c:url value='/resources/images/${getP.productId}.png' />" height="50" width="50" /></td>
 											</tr>
 									
 									</tbody>

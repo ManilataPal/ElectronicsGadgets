@@ -90,6 +90,12 @@ public class ProductController {
 	   return "redirect:/allProducts";
    }
   
-    
+   @RequestMapping(value="/viewDetails", method=RequestMethod.GET)
+	public String ProductById(@RequestParam("productId") int productId, Model model){
+		Product p = productService.getProduct(productId);
+		
+		model.addAttribute("getP", p);
+		return "viewDetails";
+	}
    
 }

@@ -17,7 +17,7 @@
       <img src="resources/images/micromax-bolt-selfie-q424-125x125-imaeghtq2hhekjcr.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Micromax Bolt Selfie Phone</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
       <img src="resources/images/micromax-canvas-amaze-2-e457-125x125-imaejgw49wzhcg6t.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Micromax Canvas Amaze </h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
       <img src="resources/images/micromax-canvas-evok-e483-125x125-imaege5g6rm8wmsw.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Micromax Canvas Evoke </h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
       <img src="resources/images/micromax-canvas-nitro-2-e311-125x125-imae7ngg4ysg56fq.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Micomax Canvas Nitro </h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@
       <img src="resources/images/micromax-canvas-xpress-4g-q413-125x125-imaedg7ahkgazrbm.jpeg" alt="hp_envy">
       <div class="caption">
         <h3>Micromax Canvas Xpress </h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="viewDetails.jsp" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>

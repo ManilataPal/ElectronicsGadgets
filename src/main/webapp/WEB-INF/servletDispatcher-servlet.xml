@@ -32,7 +32,7 @@ xmlns:context="http://www.springframework.org/schema/context"
 		view-factory-creator="viewFactoryCreator" /> -->
 		
 		
-		<bean id="viewFactoryCreator"
+<!-- 		<bean id="viewFactoryCreator"
 		class="org.springframework.webflow.mvc.builder.MvcViewFactoryCreator">
 		<property name="viewResolvers">
 			<list>
@@ -40,7 +40,7 @@ xmlns:context="http://www.springframework.org/schema/context"
 			</list>
 		</property>
 	</bean>
-	
+ -->	
 	<!-- step 1 registering the flow handler adapter -->
 	<!-- <bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
 		<property name="flowExecutor" ref="flowExecutor" />
