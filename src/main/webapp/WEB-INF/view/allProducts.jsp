@@ -1,5 +1,6 @@
 <%@ include file="header.jsp" %>
 <script>
+//Search Box From Heder products
 $(window).load(function()
 		{
 	searchTable($('#search').val());

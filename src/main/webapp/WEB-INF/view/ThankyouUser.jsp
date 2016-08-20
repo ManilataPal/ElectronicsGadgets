@@ -1,20 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Thank You for shopping with us</title>
-</head>
-<body>
-<h1>Order Submitted Successfully!</h1>
- <p>
- Thank you for your order. Your order confirmation number is:
- <br><pre>
-<%=request.getParameter("confirmationNumber")%>
- </pre>
- 
-<p>
-Please use this number when calling to check on your order.
-</body>
-</html>
+<%@ include file="header.jsp" %>
+
+<section>
+            
+                <div class="container">
+                    <p style="font-size: 50px;">Thank you</p> <br>
+                    <p style="color: blue;font-size: 50px;">${cart.userName} </p><br>
+                    <p style="font-size: 30px;">for your business!</p>
+
+                    <p>Your order with order Id <span class="label label-success"> ${cart.orderId}</span> will be shipped in <span class="label label-warning"> Five </span>  business days!</p>
+                </div>
+            
+        </section>
+
+        <section class="container">
+            <p><a href="<spring:url value="/" />" class="btn btn-success">OK</a></p>
+        </section>
+        
+ <%@ include file="footer.jsp" %>

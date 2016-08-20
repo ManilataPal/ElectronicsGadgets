@@ -19,6 +19,8 @@ public class Product implements Serializable {
 	private String productName;
 	private String productGroup;
 	private String productDescription;
+	private String productQuantity;
+	
 	private double price;
 	@Transient
 	private MultipartFile productImage;
@@ -34,7 +36,7 @@ public class Product implements Serializable {
 	public void setProductDescription(String productDescription) {
 		this.productDescription = productDescription;
 	}
-	private int productQuantity;
+	
 	public  int getProductId() {
 		return productId;
 	}
@@ -54,10 +56,10 @@ public class Product implements Serializable {
 		this.productGroup = productGroup;
 	}
 	
-	public int getProductQuantity() {
+	public String getProductQuantity() {
 		return productQuantity;
 	}
-	public void setProductQuantity(int productQuantity) {
+	public void setProductQuantity(String productQuantity) {
 		this.productQuantity = productQuantity;
 	}
 	public double getPrice() {

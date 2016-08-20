@@ -13,7 +13,7 @@
 <script
 	src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css">
 <link rel="stylesheet" href="resources/css/main.css"></link>
 <link rel="stylesheet" href="resources/css/bootstrap-theme.min.css">
 

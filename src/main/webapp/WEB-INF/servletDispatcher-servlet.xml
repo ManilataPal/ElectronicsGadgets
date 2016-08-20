@@ -13,7 +13,7 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-	<context:component-scan base-package="com" />
+	<context:component-scan base-package="com.niit.electronics" />
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler />
 	<bean id="multipartResolver"
@@ -22,27 +22,27 @@
 	</bean>
 
 
-	<!-- web flow configuration -->
-	<webflow:flow-executor id="flowExecutor" /> <webflow:flow-registry 
+	 <!-- web flow configuration -->
+	<!-- <webflow:flow-executor id="flowExecutor" /> <webflow:flow-registry 
 		id="flowRegistry" flow-builder-services="flowBuilderServices" base-path="/WEB-INF"> 
 		<webflow:flow-location id="memberShip" path="/shoppingCart.xml" /> </webflow:flow-registry> 
 		<webflow:flow-builder-services id="flowBuilderServices" view-factory-creator="viewFactoryCreator" /> 
 
 
-	<!-- <bean id="viewFactoryCreator" class="org.springframework.webflow.mvc.builder.MvcViewFactoryCreator"> 
+	<bean id="viewFactoryCreator" class="org.springframework.webflow.mvc.builder.MvcViewFactoryCreator"> 
 		<property name="viewResolvers"> <list> <ref bean="viewResolver" /> </list> 
-		</property> </bean> -->
-	<!-- step 1 registering the flow handler adapter -->
-	<!-- <bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter"> 
-		<property name="flowExecutor" ref="flowExecutor" /> </bean> -->
-	<!-- step 2 map specific application resoruces to flow -->
-	<!-- <bean class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping"> 
+		</property> </bean>
+	step 1 registering the flow handler adapter
+	<bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter"> 
+		<property name="flowExecutor" ref="flowExecutor" /> </bean>
+	step 2 map specific application resoruces to flow
+	<bean class="org.springframework.webflow.mvc.servlet.FlowHandlerMapping"> 
 		<property name="flowRegistry" ref="flowRegistry" /> <property name="singup" 
-		value="0" /> </bean> -->
+		value="0" /> </bean>
 
 
 
-
+ -->
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
