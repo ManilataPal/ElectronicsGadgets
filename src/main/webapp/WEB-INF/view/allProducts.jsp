@@ -62,11 +62,12 @@ $(document).ready(function()
 									<tr>
 										<th>Product ID</th>
 										<th>Product Name</th>
-										<th>Product Group</th>
 										<th>Product Description</th>
 										<th>Product Quantity</th>
 										<th>Product Price</th>
 										<th>Image</th>
+										<th>Product Group</th>
+										<th>Product Supplier</th>
 										<th>Product Operations</th>
 										
 									</tr>
@@ -76,11 +77,13 @@ $(document).ready(function()
 										<tr>
 											<td><c:out value="${prod.productId}" /></td>
 											<td><c:out value="${prod.productName}" /></td>
-											<td><c:out value="${prod.productGroup}" /></td>
+											
 											<td><c:out value="${prod.productDescription}" /></td>
 											<td><c:out value="${prod.productQuantity}" /></td>
 											<td><c:out value="${prod.price}" /></td>
 											<td><img src="<c:url value='/resources/images/${prod.productId}.png' />" height="50" width="50" /></td>
+											<td><c:out value="${prod.productGroup}" /></td>
+											<td><c:out value="${prod.productSupplier}" /></td>
 											<td><a href="<c:url value='/viewDetails?productId=${prod.productId}' />" >View</a>
 											<c:if test="${pageContext.request.userPrincipal.name=='admin'}">
 											<a href="<c:url value='/editProduct?productId=${prod.productId}' />" >Edit</a>

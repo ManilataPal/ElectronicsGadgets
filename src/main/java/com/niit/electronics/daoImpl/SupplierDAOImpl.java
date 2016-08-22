@@ -37,9 +37,9 @@ public class SupplierDAOImpl implements SupplierDAO {
 		}
 		
 	}
-	public Supplier getSupplier(int sid) {
-		System.out.println("Inside getSupplier"+sid);
-		return (Supplier) sessionFactory.getCurrentSession().get(Supplier.class, sid);
+	public Supplier getSupplier(int supplierId) {
+		
+		return (Supplier) sessionFactory.getCurrentSession().get(Supplier.class, supplierId);
 	}
 	public List<Supplier> getAllSupplier() {
 		return (List<Supplier>) sessionFactory.getCurrentSession().createCriteria(Supplier.class).list();

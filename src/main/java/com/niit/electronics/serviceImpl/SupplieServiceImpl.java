@@ -36,8 +36,8 @@ public class SupplieServiceImpl implements SupplierService {
 		
 	}
 
-	public Supplier getSupplier(int sid) {
-		return supplierDAO.getSupplier(sid);
+	public Supplier getSupplier(int supplierId) {
+		return supplierDAO.getSupplier(supplierId);
 	}
 
 	public List<Supplier> getAllSupplier() {

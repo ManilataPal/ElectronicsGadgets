@@ -1,6 +1,10 @@
 <%@ include file="header.jsp" %>
 <script>
-
+//Search Box From Heder products
+$(window).load(function()
+		{
+	searchTable($('#search').val());
+		})
 
 $(document).ready(function()
 		{
@@ -40,9 +44,9 @@ $(document).ready(function()
 						<div class="panel-heading">
 							<strong class=""><b>List of All Products</b> </strong></br>
 							
-							<form role="search" class="navbar-form navbar-center">
+							<form role="search"  class="navbar-form navbar-center">
                 <div class="form-group">
-                <input type="text" id="search" placeholder="Search" class="form-control">
+                <input type="text" id="search" value="${param.item}" placeholder="Search" class="form-control">
                  </div>
 					<button class="btn btn-primary">Search</button>
                 
@@ -51,20 +55,21 @@ $(document).ready(function()
             </form>
 
 						</div>
-						<div class="table-responsive">
+						<div class="table-responsive" data-max="30" data-min="11">
 						<c:if test="${!empty product}">
 							<table class="table" border="1" id="tab1">
 								<thead>
 									<tr>
 										<th>Product ID</th>
 										<th>Product Name</th>
-										<th>Product Group</th>
 										<th>Product Description</th>
 										<th>Product Quantity</th>
 										<th>Product Price</th>
-										<th>Edit Product</th>
-										<th>Delete Product</th>
-										<th>Product Image</th>
+										<th>Image</th>
+										<th>Product Group</th>
+										<th>Product Supplier</th>
+										<th>Product Operations</th>
+										
 									</tr>
 								</thead>
 								<tbody>
@@ -72,13 +77,19 @@ $(document).ready(function()
 										<tr>
 											<td><c:out value="${prod.productId}" /></td>
 											<td><c:out value="${prod.productName}" /></td>
-											<td><c:out value="${prod.productGroup}" /></td>
+											
 											<td><c:out value="${prod.productDescription}" /></td>
 											<td><c:out value="${prod.productQuantity}" /></td>
 											<td><c:out value="${prod.price}" /></td>
 											<td><img src="<c:url value='/resources/images/${prod.productId}.png' />" height="50" width="50" /></td>
-											<td><a href="<c:url value='/editProduct?productId=${prod.productId}' />" >Edit</a></td>
-											<td><a href='<c:url value="/delete/${prod.productId}" />' >Delete</a></td>
+											<td><c:out value="${prod.productGroup}" /></td>
+											<td><c:out value="${prod.productSupplier}" /></td>
+											<td><a href="<c:url value='/viewDetails?productId=${prod.productId}' />" >View</a>
+											<c:if test="${pageContext.request.userPrincipal.name=='admin'}">
+											<a href="<c:url value='/editProduct?productId=${prod.productId}' />" >Edit</a>
+											<a href='<c:url value="/delete/${prod.productId}" />' >Delete</a>
+											</c:if>
+											</td>
 										</tr>
 									</c:forEach>
 									</tbody>

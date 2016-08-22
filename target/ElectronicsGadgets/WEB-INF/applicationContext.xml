@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
@@ -19,7 +20,7 @@
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="org.h2.Driver" />
-		<property name="url" value="jdbc:h2:tcp://localhost/~/electronics" />
+		<property name="url" value="jdbc:h2:tcp://localhost/~/electronic" />
 		<property name="username" value="sa" />
 		<property name="password" value="" />
 	</bean>

@@ -67,7 +67,7 @@ public class CategoryController {
 	}
 	
 	@RequestMapping(value="/editCategory/{categoryId}",method=RequestMethod.POST)
-	public String editCategory(@PathVariable("categoryId") int categoryID, Model model, @ModelAttribute("edit") Category category){
+	public String editCategory(@PathVariable("categoryId") int catgoryId, Model model, @ModelAttribute("edit") Category category){
 		categoryService.editCategory(category);
 		return "redirect:/category";
 	}

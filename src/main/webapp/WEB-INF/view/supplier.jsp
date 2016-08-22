@@ -26,13 +26,7 @@
 									placeholder="Enter The supplier Email" required="required">
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="supplierDescription" class="col-sm-3 control-label">Description</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="supplierDescription"
-									placeholder="Enter the supplier Description" required="required">
-							</div>
-						</div>
+						
 							<div class="form-group">
 							<label for="supplierAddress" class="col-sm-3 control-label">Address</label>
 							<div class="col-sm-8">
@@ -127,7 +121,6 @@ $(document).ready(function()
 										<th>Supplier Name</th>
 										<th>Supplier Email</th>
 										<th>Supplier Address</th>
-										<th>Supplier Description</th>
 										<th>Edit Supplier</th>
 										<th>Delete Supplier</th>
 										
@@ -140,7 +133,6 @@ $(document).ready(function()
 											<td><c:out value="${sup.supplierName}" /></td>
 											<td><c:out value="${sup.supplierEmail}" /></td>
 											<td><c:out value="${sup.supplierAddress}" /></td>
-											<td><c:out value="${sup.supplierDescription}" /></td>
 											<td><a href="<c:url value='/editSupplier?supplierId=${sup.supplierId}' />" >Edit</a></td>
 											<td><a href='<c:url value="/deleteSup/${sup.supplierId}" />' >Delete</a></td>
 										</tr>

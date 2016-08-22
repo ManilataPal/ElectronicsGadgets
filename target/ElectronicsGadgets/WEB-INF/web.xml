@@ -9,7 +9,8 @@
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/servletDispatcher-servlet.xml,
-		/WEB-INF/applicationContext.xml
+		/WEB-INF/applicationContext.xml,
+		/WEB-INF/spring-security.xml
 		</param-value>
 	</context-param>
 	<listener>
@@ -24,15 +25,7 @@
          
         <load-on-startup>1</load-on-startup>
     </servlet>
-    <servlet-mapping>
-  <servlet-name>default</servlet-name>
-  <url-pattern>*.js</url-pattern>
-</servlet-mapping>
 
-<servlet-mapping>
-  <servlet-name>default</servlet-name>
-  <url-pattern>*.css</url-pattern>
-</servlet-mapping>
  
     <servlet-mapping>
         <servlet-name>servletDispatcher</servlet-name>

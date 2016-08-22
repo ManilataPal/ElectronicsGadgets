@@ -19,14 +19,10 @@
 									placeholder="Enter The product name" required="required">
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="productGroup" class="col-sm-3 control-label">Product
-								Group</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="productGroup"
-									placeholder="Enter the product group" required="">
-							</div>
-						</div>
+						
+								
+								
+							
 						<div class="form-group">
 							<label for="productDescription" class="col-sm-3 control-label">Product
 								Description</label>
@@ -61,6 +57,42 @@
 								<input type="file" class="form-control" name="productImage">
 							</div>
 						</div>
+						
+						<div class="form-group">
+							<label for="productGroup" class="col-sm-3 control-label">Product
+								Group</label>
+								<div class="col-sm-8">
+								<select name="productGroup">
+									<option>Select Category
+									<option>Samsung Mobiles
+									<option>Micromax Product
+									<option>HTC Product
+									<option>HP Desktop
+									<option>HP Laptops
+									<option>Lenovo Laptops
+									<option>Asus Laptop
+									<option>Irons
+									<option>Induction
+									<option>Oven
+									<option>Fan
+									</select>
+									</div>
+								
+								</div>
+								
+								<div class="form-group">
+							<label for="productSuppliers" class="col-sm-3 control-label">Product
+								Suppliers</label>
+								<div class="col-sm-8">
+								<select name="productSupplier">
+									<option>Select Supplier
+									<option>Ram   Suppliers
+									<option>Bulb   Suppliers
+									<option>ABC    Suppliers
+									</select>
+									</div>
+								
+								</div>
 						<div class="form-group last">
 							<div class="col-sm-offset-3 col-sm-9">
 								<button type="submit" class="btn btn-success btn-sm">ADD</button>

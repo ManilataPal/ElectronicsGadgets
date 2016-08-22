@@ -9,7 +9,7 @@
 				</div>
 				<div class="panel-body">
 					<form class="form-horizontal" method="POST" role="form"
-						action="editproduct/${getP.productId}" commandName="edit">
+						action="editproduct/${getP.productId}" commandName="edit" enctype="multipart/form-data">
 
 						<div class="form-group">
 							<label for="productId" class="col-sm-3 control-label">Product
@@ -61,7 +61,23 @@
 									value="${getP.price}" required="">
 							</div>
 						</div>
-
+						<div class="form-group">
+							<label for="image" class="col-sm-3 control-label">Product
+								Image</label>
+							<div class="col-sm-8">
+								<img src="<c:url value='/resources/images/${getP.productId}.png' />" height="50" width="50" />
+								<div class="col-sm-8">
+								<input type="file" class="form-control" name="productImage">
+							</div>
+							</div>
+						</div> 
+						<!--  <div class="form-group">
+							<label for="productImage" class="col-sm-3 control-label">Product
+								Image</label>
+							<div class="col-sm-8">
+								<input type="file" class="form-control" name="productImage">
+							</div>
+						</div>  -->
 						<div class="form-group last">
 							<div class="col-sm-offset-3 col-sm-9">
 								<button type="submit" class="btn btn-success btn-sm">EDIT</button>

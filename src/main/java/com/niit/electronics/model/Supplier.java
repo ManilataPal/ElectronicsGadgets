@@ -16,7 +16,10 @@ public class Supplier implements Serializable{
 	private String supplierName;
 	private String supplierEmail;
 	private String supplierAddress;
-	private String supplierDescription;
+	
+	
+	
+	
 	
 	public int getSupplierId() {
 		return supplierId;
@@ -42,12 +45,7 @@ public class Supplier implements Serializable{
 	public void setSupplierAddress(String supplierAddress) {
 		this.supplierAddress = supplierAddress;
 	}
-	public String getSupplierDescription() {
-		return supplierDescription;
-	}
-	public void setSupplierDescription(String supplierDescription) {
-		this.supplierDescription = supplierDescription;
-	}
+	
 	
 	
 	

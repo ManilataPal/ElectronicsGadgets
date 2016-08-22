@@ -18,13 +18,7 @@
 									placeholder="Enter The category name" required="required">
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="categoryDescription" class="col-sm-3 control-label">Description</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" name="categoryDescription"
-									placeholder="Enter the category Description" required="required">
-							</div>
-						</div>
+						
 						
 						<div class="form-group last">
 							<div class="col-sm-offset-3 col-sm-9">
@@ -111,7 +105,6 @@ $(document).ready(function()
 									<tr>
 										<th>Category ID</th>
 										<th>Category Name</th>
-										<th>Category Description</th>
 										<th>Edit Category</th>
 										<th>Delete Category</th>
 										
@@ -122,7 +115,7 @@ $(document).ready(function()
 										<tr>
 											<td><c:out value="${cat.categoryId}" /></td>
 											<td><c:out value="${cat.categoryName}" /></td>
-											<td><c:out value="${cat.categoryDescription}" /></td>
+						
 											<td><a href="<c:url value='/editCategory?categoryId=${cat.categoryId}' />" >Edit</a></td>
 											<td><a href='<c:url value="/deleteCat/${cat.categoryId}" />' >Delete</a></td>
 										</tr>

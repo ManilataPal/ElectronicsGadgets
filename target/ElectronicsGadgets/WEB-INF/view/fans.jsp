@@ -14,28 +14,29 @@
 <div class="row">
    <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/f_inalsa_exotica.jpeg" alt="hp_envy">
+      <img src="resources/images/f_inalsa_exotica.jpeg" alt="hp_envy" style="width:170px;height:170px">
       <div class="caption">
         <h3>Room Decor Exotica Fan</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="allProducts?item=Room Decor Exotica Fan" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
+  
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/f_maharaja_whiteline1.jpeg" alt="hp_envy">
+      <img src="resources/images/f_maharaja_whiteline1.jpeg" alt="hp_envy" style="width:170px;height:170px">
       <div class="caption">
         <h3>Maharaja Whiteline Fan</h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="allProducts?item=Maharaja Whiteline Fan" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>
   <div class="col-sm-5 col-md-2">
     <div class="thumbnail">
-      <img src="resources/images/f_maharaja_whiteline2.jpeg" alt="hp_envy">
+      <img src="resources/images/f_maharaja_whiteline2.jpeg" alt="hp_envy" style="width:170px;height:170px">
       <div class="caption">
         <h3>Maharaja Home Decor </h3>
-        <p><a href="#" class="btn btn-primary" role="button">Add to cart</a></p>
+        <p><a href="allProducts?item=Maharaja Home Decor" class="btn btn-primary" role="button">VIEW</a></p>
       </div>
     </div>
   </div>

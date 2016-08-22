@@ -43,15 +43,7 @@
 									value="${getS.supplierAddress}" required="required">
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="suDescripplierption" class="col-sm-3 control-label">Supplier
-								Description</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control"
-									name="supplierDescription"
-									value="${getS.supplierDescription}" required="required">
-							</div>
-						</div>
+						
 						<div class="form-group last">
 							<div class="col-sm-offset-3 col-sm-9">
 								<button type="submit" class="btn btn-success btn-sm">EDIT</button>

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.niit.electronics.dao.CategoryDAO;
 import com.niit.electronics.model.Category;
+import com.niit.electronics.model.Product;
 
 @Repository
 public class CategoryDAOImpl implements CategoryDAO {
@@ -36,18 +37,20 @@ public class CategoryDAOImpl implements CategoryDAO {
 		
 	}
 
-	public Category getCategory(int cid) {
-		System.out.println("Inside getCategory"+cid);
-		
-		return (Category) sessionFactory.getCurrentSession().get(Category.class, cid);
-	}
+	
 
 	public List<Category> getAllCategory() {
+		
+		
 		
 		return (List<Category>)
 		sessionFactory.getCurrentSession().createCriteria(Category.class).list();
 		
 	}
-	
 
+	public Category getCategory(int cid) {
+		
+		return (Category) sessionFactory.getCurrentSession().get(Category.class, cid);
+	}
+	
 }

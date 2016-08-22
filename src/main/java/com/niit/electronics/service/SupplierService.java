@@ -9,7 +9,7 @@ public interface SupplierService {
 	public void addSupplier(Supplier supplier);
 	public void editSupplier(Supplier supplier);
 	public void deleteSupplier(int sid);
-	public Supplier getSupplier(int sid);
+	public Supplier getSupplier(int supplierId);
 	public List<Supplier> getAllSupplier();
 	
 	

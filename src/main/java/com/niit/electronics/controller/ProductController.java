@@ -20,8 +20,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
+import com.niit.electronics.model.Category;
 import com.niit.electronics.model.Product;
+import com.niit.electronics.model.Supplier;
+import com.niit.electronics.service.CategoryService;
 import com.niit.electronics.service.ProductService;
+import com.niit.electronics.service.SupplierService;
 
 @Controller
 public class ProductController {
@@ -30,16 +34,34 @@ public class ProductController {
 	@Autowired
 	private ProductService productService;
 	
+	@Autowired
+	private CategoryService categoryService;
+	
+	@Autowired
+	private SupplierService supplierService;
+	
 	//adding product and image uploading using multipart
 	@RequestMapping(value = "/products", method = RequestMethod.GET)
 	public String additemPage(ModelMap map) {
 		List<Product> list=productService.getAllProduct();
     	map.addAttribute("product", list);
+    	map.addAttribute("add",list);
+    	/*List<Category> category=categoryService.getAllCategory();
+		List<Supplier> supplier=supplierService.getAllSupplier();
+		map.addAttribute("categorylist", category);
+		map.addAttribute("supplierlist", supplier);*/
 		return "products";
 	}
     @ModelAttribute("add")
 	@RequestMapping(value = "/products", method = RequestMethod.POST)
 	public String addProduct(@ModelAttribute("add") Product product, ModelMap model,BindingResult result,HttpServletRequest request) {
+    	/*Category cat = categoryService.getCategory(product.getCategory().getCid());
+    	Supplier sup = supplierService.getSupplier(product.getSupplier().getSupplierName());
+    	product.setCategory(cat);
+    	product.setSupplier(sup);
+    	product.setCategoryId(cat.getCategoryId());
+    	product.setSupplierId(sup.getSupplierId());*/
+    	
     	productService.addProduct(product);
     	MultipartFile image = product.getProductImage();
          String rootDirectory = request.getSession().getServletContext().getRealPath("/");
@@ -75,18 +97,34 @@ public class ProductController {
    
    //editing products
    @RequestMapping(value="/editProduct", method=RequestMethod.GET)
-	public String editProductById(@RequestParam("productId") int productId, Model model){
+	public String editProductById(@RequestParam("productId") int productId, ModelMap model){
 		Product p = productService.getProduct(productId);
-		
 		model.addAttribute("getP", p);
+		List<Category> category=categoryService.getAllCategory();
+		List<Supplier> supplier=supplierService.getAllSupplier();
+		model.addAttribute("categorylist", category);
+		model.addAttribute("supplierlist", supplier);
+		
 		return "editProduct";
 	}
   
    @RequestMapping(value="/editproduct/{productId}",method=RequestMethod.POST)
-   public String editProduct(@PathVariable("productId") int productId, Model model, @ModelAttribute("edit") Product product)
+   public String editProduct(@PathVariable("productId") int productId, Model model, @ModelAttribute("edit") Product p,HttpServletRequest request)
    {
-	  productService.editProduct(product);
+	  productService.editProduct(p);
 	  
+	  MultipartFile image = p.getProductImage();
+		String rootDirectory = request.getSession().getServletContext().getRealPath("/");
+      path = Paths.get(rootDirectory + "/resources/images/" + p.getProductId() + ".png");
+  System.out.println(path);
+      if(image != null && !image.isEmpty()){
+          try {
+              image.transferTo(new File(path.toString()));
+          } catch (Exception ex){
+              ex.printStackTrace();
+              throw new RuntimeException("Product image saving failed", ex);
+          }
+      }
 	   return "redirect:/allProducts";
    }
   
